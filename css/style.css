@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@keyframes fade-in {
+    0% { opacity: 0; } /* Começa totalmente transparente */
+    100% { opacity: 1; } /* Termina totalmente visível */
+  } 
+body , html , *{
+    margin: 0;
+    padding: 0;
+}
+.caixa {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 5px;
+
+    height: 100vh;
+}
+header {
+    grid-column: 1/14;
+    background-color: #3A408B;
+    height: 150px;
+}
+
+menu {
+    height: 100%;
+    grid-column: 1/2;
+    width: calc(1349px - 330px);
+    text-align: center;
+}
+li {
+    display: inline;
+}
+ a{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.4em;
+    color: #E6D40E;
+    padding: 10px;
+    animation: fade-in 1s ease-in-out;
+}
+.image {
+    height: 300px;
+    width: 300px;
+}

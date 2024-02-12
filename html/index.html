@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Receita</title>
 </head>
 <body>
     <div class="caixa">
         <header>
-            
-            <nav>
+            <menu>
                     <ul>
                         <li>
                             <a href="#" target="_parent"><span class="link">Home</span></a>
@@ -22,54 +27,81 @@
                             <a href="#" target="_parent"><span class="link">Livros de Culinaria</span></a>
                         </li>
                     </ul>
-            </nav>
+            </menu>
         </header>
         <main>
             <h1>Bem-vindo ao seu site de receitas favorito</h1>
             
-            <section class="receita" id="cafe-da-manhã">
+            <section class="receita" >
                 <h2>Café da manhã</h2>
-                <img src="../image/café.jpg" alt="café" class="image">
-                <span>Café</span>
-                <img src="../image/pão.jpg" alt="pão" class="image">
-                <span>Pão</span>
-                <img src="../image/pão-com-ovo.jpg" alt="pão-com-ovo" class="image">
-                <span>Pão com Ovo</span>
-                <img src="../image/bolo.jpg" alt="bolo" class="image">
-                <span>Bolo</span>
+                <div class="item">
+                    <img src="../image/café.jpg" alt="café" class="image">
+                    <span class="nome">Café <span class="ler-mais">Veja Mais</span></span>
+                </div>
+                <div class="item">
+                    <img src="../image/pão.jpg" alt="pão" class="image">
+                    <span class="nome">Pão <span class="ler-mais">Veja Mais</span></span>
+                    
+                </div>
+                <div class="item">
+                    <img src="../image/bolo.jpg" alt="bolo" class="image">
+                    <span class="nome">Bolo <span class="ler-mais">Veja Mais</span></span>
+                    
+                </div>
             </section>
             <section class="receita">
                 <h2>Almoço</h2>
-                <img src="https://diplomatique.org.br/wp-content/uploads/2023/10/agricultura-arroz-feijao.jpg" alt="arroz e feijão" class="image">
-                <span>Arroz e Feijão</span>
-                <img src="https://media.istockphoto.com/id/1313903217/pt/foto/delicious-chicken-strogonoff-with-mushrooms.jpg?s=1024x1024&w=is&k=20&c=urEVvpsB2XHrl9nSpoz_1isQZXKZ3tzb2u5u5wN3RfQ=" alt="estrogonofe" class="image">
-                <span>Estrogonofe</span>
-                <img src="../image/macarrão.jpg" alt="macarrão" class="image">
-                <span>Macarrão</span>
-                <img src="../image/salada.jpg" alt="salada" class="image">
-                <span>Salada</span>
+                <div class="item">
+                    <img src="https://diplomatique.org.br/wp-content/uploads/2023/10/agricultura-arroz-feijao.jpg" alt="arroz e feijão" class="image">
+                    <span class="nome">Arroz e Feijão <span class="ler-mais">Veja Mais</span></span>
+                    
+                </div>
+                <div class="item">
+                    <img src="https://media.istockphoto.com/id/1313903217/pt/foto/delicious-chicken-strogonoff-with-mushrooms.jpg?s=1024x1024&w=is&k=20&c=urEVvpsB2XHrl9nSpoz_1isQZXKZ3tzb2u5u5wN3RfQ=" alt="estrogonofe" class="image">
+                    <span class="nome">Estrogonofe <span class="ler-mais">Veja Mais</span></span>
+                    
+                </div>
+                <div class="item">
+                    <img src="../image/macarrão.jpg" alt="macarrão" class="image">
+                    <span class="nome">Macarrão <span class="ler-mais">Veja Mais</span></span>
+                    
+                </div>
             </section>
             <section class="receita">
                 <h2>Jantar</h2>
-                <img src="../image/sopa-de-frango.jpg" alt="sopa-de-frango" class="image">
-                <span>Sopa de Frango</span>
-                <img src="../image/sopa de legumes.jpg" alt="sopa de legumes" class="image">
-                <span>Sopa de Legumes</span>
-                <img src="../image/bife.jpg" alt="bife" class="image">
-                <span>Bife</span>
-                <img src="../image/macarrão-de-tigela.jpg" alt="macarrão-de-tigela" class="image">
-                <span>Macarrão de Tigela</span>
+                <div class="item">
+                    <img src="../image/sopa-de-frango.jpg" alt="sopa-de-frango" class="image">
+                    <span class="nome">Sopa de Frango <span class="ler-mais">Veja Mais</span></span>
+                    
+                </div>
+                <div class="item">
+                    <img src="../image/sopa de legumes.jpg" alt="sopa de legumes" class="image">
+                    <span class="nome">Sopa de Legumes <span class="ler-mais">Veja Mais</span></span>
+                    
+                </div>
+                <div class="item">
+                    <img src="../image/bife.jpg" alt="bife" class="image">
+                    <span class="nome">Bife <span class="ler-mais">Veja Mais</span></span>
+                    
+                </div>
             </section>
             <section class="receita">
                 <h2>Sobremesa</h2>
-                <img src="../image/bolo-de-chocolate.jpg" alt="bolo de chocolate" class="image">
-                <span>Bolo de Chocolate</span>
-                <img src="../image/pundim.jpg" alt="pudim" class="image">
-                <span>Pudim</span>
-                <img src="../image/brigadeiro.jpg" alt="brigadeiro" class="image">
-                <span>Brigadeiro</span>
-                <img src="../image/cupcake.jpg" alt="cupcake" class="image">
-                <span>Cupcake</span>
+                <div class="item">
+                    <img src="../image/pundim.jpg" alt="pudim" class="image">
+                    <span class="nome">Pudim <span class="ler-mais">Veja Mais</span></span>
+                    
+                </div>
+                <div class="item">
+                    <img src="../image/brigadeiro.jpg" alt="brigadeiro" class="image">
+                    <span class="nome">Brigadeiro <span class="ler-mais">Veja Mais</span></span>
+                    
+                </div>
+                <div class="item">
+                    <img src="../image/cupcake.jpg" alt="cupcake" class="image">
+                    <span class="nome">Cupcake <span class="ler-mais">Veja Mais</span></span>
+                    
+                </div>
             </section>
         
         </main>

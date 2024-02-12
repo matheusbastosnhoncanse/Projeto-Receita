@@ -4,15 +4,27 @@
     0% { opacity: 0; } 
     100% { opacity: 1; } 
 }
+@keyframes kenburns-top {
+    0% {
+      transform: scale(1) translateY(0);
+      transform-origin: 50% 16%;
+    }
+    100% {
+      transform: scale(1.25) translateY(-15px);
+      transform-origin: top;
+    }
+  }
+  
 
 body, html, * {
     margin: 0;
     padding: 0;
+    font-family: 'Protest Riot', sans-serif;
 }
 
 .caixa {
     display: grid;
-    grid-template-columns: [start] repeat(11, 1fr) [end];
+    grid-template-columns: [start] repeat(14, 1fr) [end];
     grid-template-rows: [top] repeat(11, 1fr) [bottom];
     gap: 5px;
     height: 100vh;
@@ -24,12 +36,8 @@ header {
     height: 70px;
 }
 
-nav {
-    height: 100%;
+menu {
     text-align: center;
-}
-ul {
-    justify-content: center;
 }
 li {
     display: inline;
@@ -44,13 +52,62 @@ a {
     padding: 10px;
     animation: fade-in 1s ease-in-out;
 }
+a:hover {
+    color: #3A408B;
+    background-color: #E6D40E;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
 main  {
-    grid-column: 2/10;
+    grid-column: 2/14;
     margin-bottom: 30px;
+    background-color: rgba(153, 153, 153, 0.192);
+    padding: 10px;
+    border-radius: 10px;
+}
+h1 {
+    padding: 10px;
+    font:bold 2em 'Protest Strike', sans-serif;
+}
+h2 {
+    padding: 10px;
+    font: bold 1.7em 'Protest Strike', sans-serif;
 }
 .image {
     height: 300px;
     width: 300px;
+    border: 5px solid #E6D40E;
+    border-radius: 10px;
+}
+.image:hover {
+    animation: kenburns-top 1s ease-out both;
+}
+.item {
+    margin-top: 25px; 
+    display: inline-block;
+    width: calc(33,33% - 25px); 
+    margin-right: 25px; 
+}
+.item:last-child {
+    margin-right: 0;
+}
+.nome {
+    display: block;
+    margin-left: 58px;
+    font-size: 1.3em;
+}
+.ler-mais {
+    display: inline-block;
+    margin-left: 25px;
+    border-radius: 10px;
+    padding: 5px;
+    color: #E6D40E;
+    background-color: #3A408B;
+}
+.ler-mais:hover {
+    background-color: #E6D40E;
+    color: #3A408B;
+    transition-duration: 0.5s;
 }
 footer {
    place-items: center;

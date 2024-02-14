@@ -1,9 +1,4 @@
 @charset "UTF-8";
-
-@keyframes fade-in {
-    0% { opacity: 0; } 
-    100% { opacity: 1; } 
-}
 @keyframes kenburns-top {
     0% {
       transform: scale(1) translateY(0);
@@ -14,8 +9,6 @@
       transform-origin: top;
     }
   }
-  
-
 body, html, * {
     margin: 0;
     padding: 0;
@@ -42,7 +35,9 @@ menu {
 .links {
     display: inline;
 }
-
+.link-l {
+    text-decoration: none;
+}
 .link {
     margin: 30px;
     list-style-type: none;
@@ -58,9 +53,6 @@ menu {
     border-radius: 10px;
     transition-duration: 0.5s;
 }
-.link-l {
-    text-decoration: none;
-}
 main  {
     grid-column: 2/14;
     margin-bottom: 30px;
@@ -69,23 +61,17 @@ main  {
     border-radius: 10px;
 }
 h1 {
-    padding: 10px;
-    font:bold 2em 'Protest Strike', sans-serif;
-}
-h2 {
-    padding: 10px;
-    font: bold 1.7em 'Protest Strike', sans-serif;
+    text-align: center;
+    font-size: 2.5em;
 }
 .image {
-    height: 300px;
-    width: 300px;
-    border: 5px solid #E6D40E;
-    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.473);
+    height: 350px;
+    width: 350px;
+    border: 3px solid #E6D40E;
     border-radius: 10px;
 }
 .image:hover {
     animation: kenburns-top 1s ease-out both;
-    cursor: pointer;
 }
 .item {
     margin-top: 25px; 
@@ -96,35 +82,37 @@ h2 {
 .item:last-child {
     margin-right: 0;
 }
-.nome {
+.item-texto {
     display: block;
     margin-left: 58px;
-    font-size: 1.3em;
+    font-size: 1.8em;
+    text-align: center;
 }
-.ler-mais {
-    display: inline-block;
-    font-size: 0.9em;
-    margin-left: 25px;
+.voltar {
+    grid-column: 5/11;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
     border-radius: 10px;
     padding: 5px;
     color: #E6D40E;
     background-color: #3A408B;
 }
-.ler-mais:hover {
-    background-color: #E6D40E;
+.voltar:hover {
     color: #3A408B;
+    background-color: #E6D40E;
     transition-duration: 0.5s;
 }
 footer {
-   place-items: center;
-   grid-row: 9/bottom;
-   grid-column: start/end;
-   height: 70px;
-   background-color: #3A408B;
-   text-align: center;
-}
-footer > p {
-   font-size: 1.6em;
-   color: #E6D40E;
-   margin-top: 21px;
-}
+    place-items: center;
+    grid-row: 9/bottom;
+    grid-column: start/end;
+    height: 70px;
+    background-color: #3A408B;
+    text-align: center;
+ }
+ footer > p {
+    font-size: 1.6em;
+    color: #E6D40E;
+    margin-top: 21px;
+ }

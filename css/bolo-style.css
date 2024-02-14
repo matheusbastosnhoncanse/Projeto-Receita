@@ -1,9 +1,4 @@
 @charset "UTF-8";
-
-@keyframes fade-in {
-    0% { opacity: 0; } 
-    100% { opacity: 1; } 
-}
 @keyframes kenburns-top {
     0% {
       transform: scale(1) translateY(0);
@@ -16,12 +11,11 @@
   }
   
 
-body, html, * {
+body , html , *{
     margin: 0;
     padding: 0;
     font-family: 'Protest Riot', sans-serif;
 }
-
 .caixa {
     display: grid;
     grid-template-columns: [start] repeat(14, 1fr) [end];
@@ -29,7 +23,6 @@ body, html, * {
     gap: 5px;
     height: 100vh;
 }
-
 header {
     grid-column: start/end;
     background-color: #3A408B;
@@ -39,10 +32,12 @@ header {
 menu {
     text-align: center;
 }
-.links {
+.menu-link {
     display: inline;
 }
-
+.links {
+    text-decoration: none;
+}
 .link {
     margin: 30px;
     list-style-type: none;
@@ -58,9 +53,6 @@ menu {
     border-radius: 10px;
     transition-duration: 0.5s;
 }
-.link-l {
-    text-decoration: none;
-}
 main  {
     grid-column: 2/14;
     margin-bottom: 30px;
@@ -71,60 +63,89 @@ main  {
 h1 {
     padding: 10px;
     font:bold 2em 'Protest Strike', sans-serif;
+    text-align: center;
+    font-size: 2em;
 }
 h2 {
     padding: 10px;
     font: bold 1.7em 'Protest Strike', sans-serif;
 }
-.image {
-    height: 300px;
-    width: 300px;
+.bolo-imagem {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 500px;
     border: 5px solid #E6D40E;
-    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.473);
     border-radius: 10px;
 }
-.image:hover {
+.bolo-imagem:hover {
     animation: kenburns-top 1s ease-out both;
+    transition-duration: 0.7s;
     cursor: pointer;
 }
+.ingredientes{
+    font-size: 1.8em;
+}
+.negrito {
+    font-size: 1.4em;
+}
+li {
+    line-height: 1.6em;
+    margin-left: 58px;
+}
+.relacionado {
+    display: flex;
+    justify-content: center;
+}
+.image-relacionado {
+    height: 350px;
+    width: 350px;
+    margin-right:  50px;
+    border: 5px solid #E6D40E;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.473);
+}
+.image-relacionado:hover {
+    border:5px dotted #3A408B;
+    cursor: pointer;
+    transition-duration: 0.5s;   
+}
 .item {
-    margin-top: 25px; 
+    margin-top: 20px; 
     display: inline-block;
-    width: calc(33,33% - 25px); 
-    margin-right: 25px; 
+    width: calc(22,22% - 20px); 
+    margin-right: 20px; 
 }
 .item:last-child {
     margin-right: 0;
 }
-.nome {
-    display: block;
-    margin-left: 58px;
-    font-size: 1.3em;
+p {
+    font-size: 1.6em;
+    text-align: center;
 }
-.ler-mais {
-    display: inline-block;
-    font-size: 0.9em;
-    margin-left: 25px;
+.voltar {
+    grid-column: 5/11;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
     border-radius: 10px;
     padding: 5px;
     color: #E6D40E;
     background-color: #3A408B;
 }
-.ler-mais:hover {
-    background-color: #E6D40E;
+.voltar:hover {
     color: #3A408B;
+    background-color: #E6D40E;
     transition-duration: 0.5s;
 }
 footer {
-   place-items: center;
-   grid-row: 9/bottom;
-   grid-column: start/end;
-   height: 70px;
-   background-color: #3A408B;
-   text-align: center;
+    grid-row: 11/bottom;
+    grid-column: start/end;
+    height: 70px;
+    background-color: #3A408B;
+    text-align: center;
 }
 footer > p {
-   font-size: 1.6em;
-   color: #E6D40E;
-   margin-top: 21px;
+    font-size: 1.6em;
+    color: #E6D40E;
+    margin-top: 21px;
 }

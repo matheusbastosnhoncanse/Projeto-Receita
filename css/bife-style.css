@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@keyframes kenburns-top {
+    0% {
+      transform: scale(1) translateY(0);
+      transform-origin: 50% 16%;
+    }
+    100% {
+      transform: scale(1.25) translateY(-15px);
+      transform-origin: top;
+    }
+  }
+  
+
+body , html , *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Protest Riot', sans-serif;
+}
+.caixa {
+    display: grid;
+    grid-template-columns: [start] repeat(14, 1fr) [end];
+    grid-template-rows: [top] repeat(11, 1fr) [bottom];
+    gap: 5px;
+    height: 100vh;
+}
+header {
+    grid-column: start/end;
+    background-color: #3A408B;
+    height: 70px;
+}
+
+menu {
+    text-align: center;
+}
+.menu-link {
+    display: inline;
+}
+.links {
+    text-decoration: none;
+}
+.link {
+    margin: 30px;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.4em;
+    color: #E6D40E;
+    padding: 10px;
+    animation: fade-in 1s ease-in-out;
+}
+.link:hover {
+    color: #3A408B;
+    background-color: #E6D40E;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+main  {
+    grid-column: 2/14;
+    margin-bottom: 30px;
+    background-color: rgba(153, 153, 153, 0.192);
+    padding: 10px;
+    border-radius: 10px;
+}
+h1 {
+    padding: 10px;
+    font:bold 2em 'Protest Strike', sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+h2 {
+    padding: 10px;
+    font: bold 1.7em 'Protest Strike', sans-serif;
+}
+.bife-image {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 500px;
+    border: 5px solid #E6D40E;
+    border-radius: 10px;
+}
+.bife-image:hover {
+    animation: kenburns-top 1s ease-out both;
+    transition-duration: 0.7s;
+    cursor: pointer;
+}
+.ingredientes{
+    font-size: 1.8em;
+}
+.ingredientes-pequeno {
+    font-size: 1.6em;
+}
+.negrito {
+    font-size: 1.4em;
+}
+li {
+    line-height: 1.6em;
+    margin-left: 58px;
+}
+.relacionado {
+    display: flex;
+    justify-content: center;
+}
+.image-relacionado {
+    height: 350px;
+    width: 350px;
+    margin-right:  50px;
+    border: 5px solid #E6D40E;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.473);
+}
+.image-relacionado:hover {
+    border:5px dotted #3A408B;
+    cursor: pointer;
+    transition-duration: 0.5s;   
+}
+.item {
+    margin-top: 20px; 
+    display: inline-block;
+    width: calc(22,22% - 20px); 
+    margin-right: 20px; 
+}
+.item:last-child {
+    margin-right: 0;
+}
+p {
+    font-size: 1.6em;
+    text-align: center;
+}
+.voltar {
+    grid-column: 5/11;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+    border-radius: 10px;
+    padding: 5px;
+    color: #E6D40E;
+    background-color: #3A408B;
+}
+.voltar:hover {
+    color: #3A408B;
+    background-color: #E6D40E;
+    transition-duration: 0.5s;
+}
+footer {
+    grid-row: 11/bottom;
+    grid-column: start/end;
+    height: 70px;
+    background-color: #3A408B;
+    text-align: center;
+}
+footer > p {
+    font-size: 1.6em;
+    color: #E6D40E;
+    margin-top: 21px;
+}

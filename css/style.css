@@ -39,12 +39,16 @@ header {
 menu {
     text-align: center;
 }
+.ss {
+    display: none;
+}
 .links {
     display: inline;
 }
 
 .link {
-    margin: 30px;
+    font-size: 1.5em;
+    margin: 10px;
     list-style-type: none;
     text-decoration: none;
     font-size: 1.4em;
@@ -62,6 +66,8 @@ menu {
     text-decoration: none;
 }
 main  {
+    display: flex;
+    flex-flow: wrap column;
     grid-column: 2/14;
     margin-bottom: 30px;
     background-color: rgba(153, 153, 153, 0.192);
@@ -98,11 +104,12 @@ h2 {
 }
 .nome {
     display: block;
+    text-align: center;
+    font-size: 2.2em;
     margin-left: 58px;
-    font-size: 1.3em;
 }
 .ler-mais {
-    display: inline-block;
+    display: none;
     font-size: 0.9em;
     margin-left: 25px;
     border-radius: 10px;

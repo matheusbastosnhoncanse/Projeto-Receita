@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@media print {
+    body,html,*{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    header {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 768px){
+    .café-imagem {
+        width: 70%;
+
+    }
+}
